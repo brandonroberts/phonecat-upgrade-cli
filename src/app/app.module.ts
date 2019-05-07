@@ -18,7 +18,9 @@ import { LocationUpgradeModule } from '@angular/common/upgrade';
     UpgradeModule,
     HttpClientModule,
     FormsModule,
-    LocationUpgradeModule.config()
+    LocationUpgradeModule.config({
+      useHash: true
+    })
   ],
   declarations: [
     PhoneListComponent,
